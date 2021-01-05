@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game Jquery</title>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='./index.css'/>
+    <script src="https://kit.fontawesome.com/a9a2039750.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header><i class="fab fa-github" onclick="window.open('https://github.com/jordyf15','_blank')"></i>
+         Created by Jordy Ferdian 
+         <i class="fab fa-linkedin-in" onclick="window.open('https://linkedin.com/in/jordy-ferdian-3606041a7','_blank')"></i></header>
+         <div id='blocker'></div>
+    <div id='simon'>
+        <button class="simonBtn" id='redBtn'></button>
+        <button class="simonBtn" id="blueBtn"></button>
+        <button class="simonBtn" id="greenBtn"></button>
+        <button class="simonBtn" id="yellowBtn"></button>
+        <div id='menu'>
+            <h1>Simon<i class="fab fa-free-code-camp"></i></h1>
+            <div id="menuContainer">
+                <div id='menuItemContainer'>
+                    <div id="seriesContainer">
+                        <span id='series'></span>
+                    </div>
+                    <span>count</span>
+                </div>
+                <div class='menuItemContainer'>
+                    <button class='menu-buttons' id='play'></button>
+                    <span>start</span>
+                </div>
+                <div id='strict-wrapper'>
+                    <div id='strict-led'></div>
+                    <div class="menuItemContainer">
+                        <button class='menu-buttons' id='strict'></button>
+                        <span>strict</span>
+                    </div>
+                </div>
+            </div>
+            <div id=power-wrapper>
+                OFF <div id='power'>
+                        <div class='on-off' id='off'></div>
+                        <div class='on-off' id='on'></div>
+                </div> ON
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script src='./script.js'></script>
+</body>
+</html>
